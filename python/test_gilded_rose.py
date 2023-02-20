@@ -15,7 +15,7 @@ class GildedRoseTest(unittest.TestCase):
             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
-            Item(name="Conjured Mana Cake", sell_in=3, quality=6),
+            Item(name="Conjured Mana Cake", sell_in=3, quality=16),
             ]     
 
     def compare_results(self, test_results, code_results):
@@ -35,7 +35,7 @@ class GildedRoseTest(unittest.TestCase):
                         Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=13, quality=22),
                         Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=8, quality=50),
                         Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=3, quality=50),
-                        Item(name="Conjured Mana Cake", sell_in=1, quality=4),
+                        Item(name="Conjured Mana Cake", sell_in=1, quality=12),
                         ]
         gilded_rose = GildedRose(copy.deepcopy(self.items))
         for day in range(days):
@@ -53,7 +53,7 @@ class GildedRoseTest(unittest.TestCase):
                         Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=12, quality=23),
                         Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=7, quality=50),
                         Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=2, quality=50),
-                        Item(name="Conjured Mana Cake", sell_in=0, quality=3),
+                        Item(name="Conjured Mana Cake", sell_in=0, quality=10),
                         ]
         gilded_rose = GildedRose(copy.deepcopy(self.items))
         for day in range(days):
@@ -71,7 +71,7 @@ class GildedRoseTest(unittest.TestCase):
                         Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=25),
                         Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=50),
                         Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=0, quality=50),
-                        Item(name="Conjured Mana Cake", sell_in=-2, quality=0),
+                        Item(name="Conjured Mana Cake", sell_in=-2, quality=2),
                         ]
         gilded_rose = GildedRose(copy.deepcopy(self.items))
         for day in range(days):
